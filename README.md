@@ -20,7 +20,7 @@ Each model is implemented using Python and scikit-learn with clear visualization
 - Naive Bayes
 - Decision Tree Classifier
 
-## 🛠 Tech Stack
+##  Tech Stack
 - Python
 - NumPy
 - Pandas
@@ -32,7 +32,7 @@ To build strong intuition behind ML algorithms through consistent hands-on imple
 
 ---
 
-Daily progress. One model at a time 🚀
+Daily progress. One model at a time 
 
 # Polynomial Regression
 
@@ -82,3 +82,39 @@ Predict **salary** based on **position level**, where the relationship is non-li
 ##  Sample Prediction
 ```python
 poly_reg.predict(poly.fit_transform([[6.5]]))
+
+#  Support Vector Regression (SVR)
+
+Support Vector Regression (SVR) is a powerful regression algorithm that fits the best possible curve within a defined margin (epsilon), focusing on minimizing error while maintaining model simplicity.
+
+Unlike traditional regression, SVR is **margin-based**, not distance-based.
+
+---
+
+##  Problem Statement
+Predict **salary** based on **position level** using a non-linear regression approach that is robust to outliers.
+
+---
+
+##  How SVR Works
+- Uses a **kernel trick** to map data into higher dimensions
+- Fits a regression line within an ε-insensitive tube
+- Penalizes only points outside the margin
+
+> SVR cares about support vectors, not every data point.
+
+---
+
+## 🛠 Tech Stack
+- Python  
+- NumPy  
+- Pandas  
+- Matplotlib  
+- scikit-learn  
+
+---
+
+##  Model Configuration
+```python
+SVR(kernel='rbf')
+
