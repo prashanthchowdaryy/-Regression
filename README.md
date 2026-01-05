@@ -159,3 +159,42 @@ KNeighborsRegressor(
     leaf_size=30
 )
 
+#  Decision Tree Regression
+
+Decision Tree Regression is a rule-based machine learning algorithm that predicts values by learning decision rules inferred from the data.
+
+It splits the dataset into smaller regions and predicts the average outcome in each region.
+
+---
+
+##  Problem Statement
+Predict **salary** based on **position level** using a tree-structured regression model.
+
+---
+
+##  How Decision Tree Regression Works
+- Data is split based on feature values
+- Each internal node represents a decision rule
+- Leaf nodes store predicted values
+- Predictions are piecewise constant
+
+> Decision Trees learn rules, not curves.
+
+---
+
+## 🛠 Tech Stack
+- Python  
+- NumPy  
+- Pandas  
+- Matplotlib  
+- scikit-learn  
+
+---
+
+##  Model Configuration
+```python
+DecisionTreeRegressor(
+    criterion='friedman_mse',
+    splitter='random'
+)
+
