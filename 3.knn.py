@@ -44,3 +44,4 @@ rfr_reg_model.fit(x,y)
 
 rfr_reg_pred=rfr_reg_model.predict([[6.5]])
 print(rfr_reg_pred)
+
