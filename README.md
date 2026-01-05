@@ -118,3 +118,44 @@ Predict **salary** based on **position level** using a non-linear regression app
 ```python
 SVR(kernel='rbf')
 
+#  K-Nearest Neighbors (KNN) Regression
+
+KNN Regression is a **non-parametric, instance-based** learning algorithm that predicts values by averaging the outputs of the nearest data points.
+
+It does not learn a function — it **remembers the data**.
+
+---
+
+##  Problem Statement
+Predict **salary** based on **position level** by using similarity-based learning.
+
+---
+
+##  How KNN Regression Works
+1. Choose a value of **K**
+2. Find K nearest data points using distance metrics
+3. Compute prediction using:
+   - Mean (uniform)
+   - Weighted average (distance-based)
+
+> KNN learns lazily but predicts aggressively.
+
+---
+
+## 🛠 Tech Stack
+- Python  
+- NumPy  
+- Pandas  
+- Matplotlib  
+- scikit-learn  
+
+---
+
+##  Model Configuration
+```python
+KNeighborsRegressor(
+    n_neighbors=5,
+    weights='distance',
+    leaf_size=30
+)
+
